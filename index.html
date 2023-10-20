@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WEBPAGE</title>
+<!--paste here-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+<!--Navigation-->
+    <nav>
+        <div class="navigation">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">TEACHERS</a></li>
+                <li><a href="#">COURSES</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <form>
+                <input type="text" placeholder="What are you looking for?">
+            </form>
+        </div>
+    </nav>
+
+<!--Home section starts-->
+
+<section id="home">
+    <h2>KNOWLEDGE IS POWER</h2>
+    <P>Education is the pathway for a nation's progress. Education is the backbone of society.
+        The government should take all measures to provide education to every individual of the country.
+        This will bring equality among people and when people improvise their way of living, they become more responsible towards society.</P>
+        <div class="btn">
+            <a class="blue" href="#">LEARN MORE</a>
+            <a class="yellow" href="#">VISIT COURSES</a>
+
+        </div>
+</section>
+
+<!--Home section ends-->
+<!--features-->
+
+<section id="features">
+    <h1>Awesome Features</h1>
+    <p>Education is an activity that has purpose all the time, irrespective of formal, informal, or non-formal nature.</p>
+    <div class="fea-base">
+        <div class="fea-box">
+            <h3>Scholarship facility</h3>
+            <p>We provide various scholarship facilities for students <br> who are qualified with good merits.</p>
+        </div>
+    </div>
+
+    <div class="fea-base">
+        <div class="fea-box">
+            <h3>Certified courses</h3>
+            <p>Certificates are provided along with the courses which can be added in <br> your resume for future job oppurtunities.</p>
+        </div>
+    </div>
+
+    <div class="fea-base">
+        <div class="fea-box">
+            <h3>E-Learning</h3>
+            <p>E-learning offers several advantages over traditional education, including greater accessibility regardless of location, resource scalability, <br> improved academic results, self-paced learning, and cost-effectiveness.</p>
+        </div>
+    </div>
+</section>
+<!--footer section-->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>ABOUT</h3>
+            <p>The website gives huge array of academic <br> options to student from traditional <br> to contemporary studies. <br> They provide online degree courses from <br> accounting and economics to engineering and <br> also carries material on niche subjects like <br> behavioural psychology.</p>
+        </div>
+
+        <div class="box">
+            <h3>QUICK LINKS</h3>
+            <a href="#">HOME</a>
+            <a href="#">COURSES</a>
+            <a href="#">TEACHERS</a>
+            <a href="#">PRICE</a>
+            <a href="#">REVIEW</a>
+        </div>
+
+        <div class="box">
+            <h3>CONTACT US</h3>
+            <p> <i></i>+91 123-456-7890</p>
+            <p><i></i>knowledgeispower@gmail.com</p>
+        </div>
+    </div>
+</section>
+<h1>SIGN UP FOR FREE</h1>
+<form id="sign-up-form"onsubmit="return validateform()">
+<label for="email id">EMAIL ID:<label>
+<input type="email"id="email"required><br>
+<label for="password">PASSWORD:</label>
+<input type="password"id="password"required><br>
+<button type="submit">SIGN IN</button>  
+</form>
+<p id="message"></p>
+<script>
+    function validateform(){
+        var email=document.getElementById("email").value;
+        var password=document.getElementById("Password").value;
+        var message=document.getElementById("message");
+        if (email ===""|| password==="")
+        { message.textContent="please fill in all fields.";return false;}
+
+        
+    }
+</script>
+
+</body>
+</html>
